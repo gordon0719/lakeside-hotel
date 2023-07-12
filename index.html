@@ -1,0 +1,597 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>湖濱渡假飯店 - 生活即是旅行</title>
+  <!-- link.css   連結開頭./ -->
+  <link rel="stylesheet" href="./plugins/bootstrap.min.css">
+  <link rel="stylesheet" href="./plugins/custom.css">
+  <link rel="shortcut icon" href="./icon.ico" type="image/x-icon">
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="./plugins/code.jquery.com_jquery-3.7.0.min.js"></script>
+  <script src="./plugins/bootstrap.min.js"></script>
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#chimenu" data-bs-offset="1">
+  <header id="chimenu" class="bg-dark fixed-top">
+    <nav class="navbar navbar-expand-md navbar-light navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">湖濱渡假飯店</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#chinav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="chinav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#chiroom"><i class="fas fa-bed me-2"></i>房型介紹</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#chifacility"><i class="fas fa-gamepad me-2"></i>服務設施</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#chifood"><i class="fas fa-utensils me-2"></i>餐飲美食</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#chitrans"><i class="fas fa-map-marker-alt me-2"></i>交通資訊</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#chicontact"><i class="fas fa-envelope me-2"></i>聯絡我們</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+
+  <section>
+    <div id="chislider" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000" data-bs-pause="false">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#chislider" data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#chislider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#chislider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#chislider" data-bs-slide-to="3" aria-label="Slide 4"></button>
+
+      </div>
+
+
+      <div class="carousel-inner">
+        <div class="carousel-item vh-100 active">
+          <img src="./imgs/carousel_1.jpg" class="w-100 h-100">
+          <div class="carousel-caption d-flex flex-column vh-100 justify-content-center">
+            <h1>Summer Pool Party</h1>
+            <p class="d-none d-md-block">Some representative placeholder content for the first slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item vh-100">
+          <img src="./imgs/carousel_7.jpg" class="w-100 h-100">
+          <div class="carousel-caption d-flex flex-column vh-100 justify-content-center">
+            <h1>Free your mind</h1>
+            <p class="d-none d-md-block">Some representative placeholder content for the second slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item vh-100">
+          <img src="./imgs/carousel_5.jpg" class="w-100 h-100">
+          <div class="carousel-caption d-flex flex-column vh-100 justify-content-center">
+            <h1 class="text-shadow:2px 3px 5px #4d4d4d;">Your Dream Wedding Starts Here
+            </h1>
+            <p class="d-none d-md-block">Some representative placeholder content for the third slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item vh-100">
+          <img src="./imgs/carousel_9.jpg" class="w-100 h-100">
+          <div class="carousel-caption d-flex flex-column vh-100 justify-content-center">
+            <h1>Relax and Be Pampered</h1>
+            <p class="d-none d-md-block">Some representative placeholder content for the third slide.</p>
+          </div>
+        </div>
+      </div>
+      <!-- 左右箭頭 -->
+
+      <button class="carousel-control-next" href="#chislider" data-bs-slide="next">
+        <i class="fas fa-solid fa-chevron-right fa-3x"></i> </button>
+      <button class="carousel-control-prev" href="#chislider" data-bs-slide="prev">
+        <i class="fas fa-solid fa-chevron-left fa-3x"></i> </button>
+    </div>
+  </section>
+
+  <section id="chiroom" class="container py-5">
+    <header class="text-center">
+      <h2 class="text-info pb-5">房型介紹</h2>
+      <nav class="nav nav-tabs justify-content-around">
+        <button class="nav-item nav-link bg-info text-white active" data-bs-toggle="tab" data-bs-target="#roomA">行政客房
+        </button>
+        <button class="nav-item nav-link bg-info  text-white" data-bs-toggle="tab" data-bs-target="#roomB">景隅套房</button>
+        <button class="nav-item nav-link bg-info text-white" data-bs-toggle="tab" data-bs-target="#roomC">慧穎湯屋</button>
+        <button class="nav-item nav-link bg-info text-white" data-bs-toggle="tab"
+          data-bs-target="#roomPrice">價目表</button>
+        <button class="nav-item nav-link bg-info text-white" data-bs-toggle="tab"
+          data-bs-target="#roomRule">訂房須知</button>
+      </nav>
+    </header>
+
+    <article class="tab-content py-5">
+      <div class="row tab-pane fade show active" id="roomA">
+        <p class="col-12 text-muted text-center mb-5">溫馨典雅的行政本館，給您簡約的度假享受。
+          <br>使用大片落地窗，採光極佳，每房皆設有觀景陽台，讓您遠眺高山、與大自然一親芳澤。
+        </p>
+        <div class="col-12 col-md-6 col-lg-4 mb-5">
+          <div class="card">
+            <img src="./imgs/roomD1.jpg" class="card-imp-top">
+            <div class="card-body">
+              <h5>尊爵客房
+              </h5>
+              <p class="card-text">溫馨雙人房<small class="text-muted float-end">8.5 坪</small></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mb-5">
+          <div class="card">
+            <img src="./imgs/roomD2.jpg" class="card-imp-top">
+            <div class="card-body">
+              <h5>菁英客房</h5>
+              <p class="card-text">兩中床<small class="text-muted float-end">8.5 坪</small></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mb-5">
+          <div class="card">
+            <img src="./imgs/roomD3.jpg" class="card-imp-top">
+            <div class="card-body">
+              <h5>雅士客房</h5>
+              <p class="card-text">溫馨雙人房<small class="text-muted float-end">8.5 坪</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row tab-pane fade" id="roomB">
+        <p class="col-12 text-muted text-center mb-5">入住市景客房，大片窗景享受陽光灑進房的溫暖。
+          <br>與高級住宅比鄰而居，房間就是你的最佳觀景區，除了可在房內看球賽的實況轉播，晚上還可以看夜景。
+        </p>
+        <div class="col-12 col-md-6 col-lg-4 mb-5">
+          <div class="card">
+            <img src="./imgs/roomA1.jpg" class="card-imp-top">
+            <div class="card-body">
+              <h5>菁英套房</h5>
+              <p class="card-text">溫馨雙人房<small class="text-muted float-end">8.5 坪</small></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mb-5">
+          <div class="card">
+            <img src="./imgs/roomA2.jpg" class="card-imp-top">
+            <div class="card-body">
+              <h5>尊爵套房</h5>
+              <p class="card-text">溫馨雙人房<small class="text-muted float-end">8.5 坪</small></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mb-5">
+          <div class="card">
+            <img src="./imgs/roomA3.jpg" class="card-imp-top">
+            <div class="card-body">
+              <h5>湖畔套房</h5>
+              <p class="card-text">溫馨雙人房<small class="text-muted float-end">8.5 坪</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row tab-pane fade" id="roomC">
+        <p class="col-12 text-muted text-center mb-5">大湖璞旅的客房以木質色調為主，搭配大窗戶明亮採光。
+          <br>簡單樸素的極簡風格，帶給旅人們很Chill的旅行時光。
+        </p>
+        <div class="col-12 col-md-6 col-lg-4 mb-5">
+          <div class="card">
+            <img src="./imgs/roomC1.jpg" class="card-imp-top">
+            <div class="card-body">
+              <h5>景觀湯屋</h5>
+              <p class="card-text">溫馨雙人房<small class="text-muted float-end">8.5 坪</small></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mb-5">
+          <div class="card">
+            <img src="./imgs/roomC2.jpg" class="card-imp-top">
+            <div class="card-body">
+              <h5>石上湯屋</h5>
+              <p class="card-text">溫馨雙人房<small class="text-muted float-end">8.5 坪</small></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mb-5">
+          <div class="card">
+            <img src="./imgs/roomC3.jpg" class="card-imp-top">
+            <div class="card-body">
+              <h5>方池湯屋</h5>
+              <p class="card-text">溫馨雙人房<small class="text-muted float-end">8.5 坪</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="roomPrice">
+        <div class="mb-5">
+          <h5 class="text-info">行政本館</h5>
+          <table class="table-sm text-center w-100">
+            <thead>
+              <tr class="alert alert-info">
+                <th>房型</th>
+                <th>平日</th>
+                <th>假日</th>
+                <th>連續假日</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>溫馨雙人房</th>
+                <td>NT3,000</td>
+                <td>NT3,000</td>
+                <td>NT3,000</td>
+              </tr>
+              <tr>
+                <th>溫馨雙人房</th>
+                <td>NT3,000</td>
+                <td>NT3,000</td>
+                <td>NT3,000</td>
+              </tr>
+              <tr>
+                <th>溫馨雙人房</th>
+                <td>NT3,000</td>
+                <td>NT3,000</td>
+                <td>NT3,000</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="mb-5">
+          <h5 class="text-info">行政本館</h5>
+          <table class="table-sm text-center w-100">
+            <thead>
+              <tr class="alert alert-info">
+                <th>房型</th>
+                <th>平日</th>
+                <th>假日</th>
+                <th>連續假日</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>溫馨雙人房</th>
+                <td>NT3,000</td>
+                <td>NT3,000</td>
+                <td>NT3,000</td>
+              </tr>
+              <tr>
+                <th>溫馨雙人房</th>
+                <td>NT3,000</td>
+                <td>NT3,000</td>
+                <td>NT3,000</td>
+              </tr>
+              <tr>
+                <th>溫馨雙人房</th>
+                <td>NT3,000</td>
+                <td>NT3,000</td>
+                <td>NT3,000</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="mb-5">
+          <h5 class="text-info">行政本館</h5>
+          <table class="table-sm text-center w-100">
+            <thead>
+              <tr class="alert alert-info">
+                <th>房型</th>
+                <th>平日</th>
+                <th>假日</th>
+                <th>連續假日</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>溫馨雙人房</th>
+                <td>NT3,000</td>
+                <td>NT3,000</td>
+                <td>NT3,000</td>
+              </tr>
+              <tr>
+                <th>溫馨雙人房</th>
+                <td>NT3,000</td>
+                <td>NT3,000</td>
+                <td>NT3,000</td>
+              </tr>
+              <tr>
+                <th>溫馨雙人房</th>
+                <td>NT3,000</td>
+                <td>NT3,000</td>
+                <td>NT3,000</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="roomRule">
+        <h3 class="text-end border-bottom border-info">訂房須知</h3>
+        <h5 class="text-info">[ 飯店設備 ]</h5>
+        <p class="mb-5">
+          客房無線網路、有線第四台、自助洗衣機、免費烘乾機、免費停車場
+        </p>
+        <h5 class="text-info">[ 入住須知 ]</h5>
+        <p class="mb-5">
+          進房時間（Check In )時間為15:00以後；退房時間（Check Out）時間為11:00以前。<br>
+          住宿時請攜帶本人身分證正本、駕照以利核對。<br>
+          一般住宿附贈早餐、SPA券（依住宿房型開立），特殊專案依專案條件辦理。<br>
+          超過退房時間一個小時將以一個小時200元計費，超過半個小時將以一個小時計算。<br>
+          請注意住宿人數勿超過客房設定之人數，若有超過客房設定人數，飯店有權拒絕入住。
+        </p>
+        <h5 class="text-info">[ 平假日定義 ]</h5>
+        <p class="mb-5">
+          平日時間：星期日~星期五；假日時間：星期六、連續假日結束前一日，依飯店公告為準。
+        </p>
+        <p class="mb-5">
+          為維護住宿品質，室內空間全面禁菸，禁止攜帶貓狗等寵物入住，如經查獲加收清潔費5000元。<br>
+          為維護公共及個人安全，禁止在房間內烹煮食物，或攜帶瓦斯、電磁爐等同性質用具，敬請房客務必配合。<br>
+          客房地面為木質地板，請勿擅自移動房內傢俱，如發現自行搬動客房家具造成木質地面損傷，需付損毁費用。<br>
+          房型擺設僅供參考，以實體房間為主。<br>
+          免費停車場（僅供免費停車，不負保管之責）。<br>
+          行政本館及雙幕川館內衛浴設備皆為一般熱水，如需使用溫泉需至戶外大眾池或改訂繪圖湯屋房型。
+        </p>
+
+        <h3 class="text-end border-bottom border-info">官網訂房規範</h3>
+        <p class="mb-5">- 僅適用官網訂房，專案如有特殊需求，依專案為主</p>
+        <h5 class="text-info">[ 線上訂房須知 ]</h5>
+        <p class="mb-5">
+          線上訂房交易價格均已含營業稅及服務費，若您選擇線上刷卡，交易成功後將由您的信用卡帳戶直接扣款。<br>
+          線上訂房不接受國民旅遊卡刷卡訂房，若需使用國民旅遊卡訂房請直接電洽櫃台辦理。
+        </p>
+        <h5 class="text-info">[ 特殊因素之退房處理 ]</h5>
+        <p class="mb-5">
+          若因天然災害等不可抗拒之因素（如地震、颱風等，以飯店所在地縣市政府公告為準）無法如期前往住宿<br>
+          請於原訂住宿日３日（含當日）內與飯店之訂房中心連絡改期（得保留6個月）或是辦理退費。
+        </p>
+
+      </div>
+
+    </article>
+  </section>
+  <section id="chifacility" class="py-5 text-white bg-light">
+    <header class="text-center">
+      <h2 class="text-info pb-5">服務設施</h2>
+    </header>
+    <article class="container">
+      <ul class="row list-unstyled">
+        <!-- flexbox A-->
+        <li class="row col-12 col-lg-6 media mb-4 flex-column flex-sm-row align-items-center">
+          <!-- item A1 , flexbox B-->
+          <img class="col-sm-6 pb-3" src="./imgs/fac5.jpg"> <!-- item B1-->
+          <div class="col-sm-6 media-body">
+            <!-- item B2-->
+            <h5 class="mt-0 mb-1">戶外溫泉悠活樂園</h5>
+            <p class="border-bottom border-info pb-3">溫泉水質為碳酸性質有美人湯之稱，另提供SPA按摩與冷泉使用，精油藥浴共五組溫泉歡迎您前來享受。</p>
+          </div>
+        </li>
+        <li class="row col-12 col-lg-6 media mb-4 flex-column flex-sm-row align-items-center">
+          <img class="col-sm-6 pb-3" src="./imgs/fac7.jpg">
+          <div class="col-sm-6 media-body">
+            <h5 class="mt-0 mb-1">頂樓無邊際泳池</h5>
+            <p class="border-bottom border-info pb-3">空中眺望遠方山巒美景，山湖連成一線的無邊際游泳池，陽光照射下，能完美倒影出湖光山色。</p>
+          </div>
+        </li>
+        <li class="row col-12 col-lg-6 media mb-4 flex-column flex-sm-row align-items-center">
+          <img class="col-sm-6 pb-3" src="./imgs/fac2.jpg">
+          <div class="col-sm-6 media-body">
+            <h5 class="mt-0 mb-1">9F無遮蔽視野健身房</h5>
+            <p class="border-bottom border-info pb-3">提供有氧與無氧相關健身設施，提供房客免費使用並提供免費毛巾替換，進入使用前請向櫃台提出申請管制門卡使用。</p>
+          </div>
+        </li>
+        <li class="row col-12 col-lg-6 media mb-4 flex-column flex-sm-row align-items-center">
+          <img class="col-sm-6 pb-3" src="./imgs/fac3.jpg">
+          <div class="col-sm-6 media-body">
+            <h5 class="mt-0 mb-1">3F SPA 全身護膚中心</h5>
+            <p class="border-bottom border-info pb-3">好好考賞自己，前來享受全身或足部的按摩精油SPA，讓你的度假達到身心靈的全面放鬆，本SPA中心採預約制請提前兩周預約。</p>
+          </div>
+        </li>
+        <li class="row col-12 col-lg-6 media mb-4 flex-column flex-sm-row align-items-center">
+          <img class="col-sm-6 pb-3" src="./imgs/fac4.jpg">
+          <div class="col-sm-6 media-body">
+            <h5 class="mt-0 mb-1">1F 免費租借腳踏車</h5>
+            <p class="border-bottom border-info pb-3">提供免費四十組變速淑女腳踏車，讓賓客租借使用，請向櫃台提出申請數量有限請加以利用。</p>
+          </div>
+        </li>
+        <li class="row col-12 col-lg-6 media mb-4 flex-column flex-sm-row align-items-center">
+          <img class="col-sm-6 pb-3" src="./imgs/fac6.jpg">
+          <div class="col-sm-6 media-body">
+            <h5 class="mt-0 mb-1">1F 迎賓大廳</h5>
+            <p class="border-bottom border-info pb-3">在地經典地標飯店，提供舒適且奢華的服務使用，您可以免費使用早報與咖啡機，並獲得相關旅遊情報。</p>
+          </div>
+        </li>
+      </ul>
+    </article>
+  </section>
+
+
+  <section id="chifood" class="py-5 container">
+    <header class="text-center">
+      <h2 class="text-info pb-3">餐飲美食</h2>
+    </header>
+    <article class="row py-5 gy-4">
+      <!--tab Content-->
+      <div class="tab-content col-lg-6">
+        <img id="foodImg1" class="img-thumbnail img-fluid tab-pane fade show active" src="./imgs/food1.jpg">
+        <img id="foodImg2" class="img-thumbnail img-fluid tab-pane fade" src="./imgs/food3.jpg">
+        <img id="foodImg3" class="img-thumbnail img-fluid tab-pane fade" src="./imgs/food4.jpg">
+      </div>
+      <!--Accordion-->
+      <div class="accordion list-group col-lg-6 px-3" id="foodMenu">
+        <div class="accordion-item" data-bs-toggle="list" data-bs-target="#foodImg1">
+          <a class="text-decoration-none alert-warning accordion-header accordion-button" data-bs-toggle="collapse"
+            href="#foodTxt1">
+            中歐頂級豪華早餐 （自助式）
+          </a>
+          <div id="foodTxt1" class="accordion-collapse collapse show" data-bs-parent="#foodMenu">
+            <div class="accordion-body">
+              <p>
+                致春園餐廳眺望溫泉公園景觀，嚴選谷關當地食材精心烹調充滿谷關風味的特色小吃，菜色美味有口皆碑，在這裡除了品嘗美食外更可飽覽溫泉公園山光水色，味覺與視覺的雙重享受。<br>
+                適合工商宴席、婚禮宴客、家庭聚餐、大宴小酌、台菜、客家菜、風味套餐色、香、味美。寬敞的宴會大廳飯店備有多種餐飲選擇，是用餐之好所在！，多種餐飲選擇滿足您挑剔的味蕾並歡迎親臨品嚐！!
+              </p>
+              <p class="float-end text-danger">
+                定價： 大人 NT500 / 小孩 NT300<br>
+                營業時間：AM 06:00 ~ AM 11:00
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item" data-bs-toggle="list" data-bs-target="#foodImg2">
+          <a class="text-decoration-none alert-warning accordion-header accordion-button collapsed"
+            data-bs-toggle="collapse" href="#foodTxt2">
+            咖啡複合式鋼琴酒吧
+
+          </a>
+          <div id="foodTxt2" class="accordion-collapse collapse" data-bs-parent="#foodMenu">
+            <div class="accordion-body">
+              <p>
+                大飯店一樓的挑高中庭，瀰漫優雅的南洋休閒風，庭內雨林造景，融合水聲與天籟柔美樂音，供應各式花茶、咖啡、健康蔬果汁、英式下午茶及宵夜，揉合自然音樂，是您輕鬆暢敘的最佳地點。<br>
+                （假日二人樂團鋼琴、長笛、薩克斯風演奏）
+              </p>
+              <p class="float-end text-danger">
+                基本消費：NT150 + 10% / 位<br>
+                營業時間：PM 07:00 ~ AM 01:00
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item" data-bs-toggle="list" data-bs-target="#foodImg3">
+          <a class="text-decoration-none alert-warning accordion-header accordion-button collapsed"
+            data-bs-toggle="collapse" href="#foodTxt3">
+            桶仔爐烤春雞 露營客最愛
+          </a>
+          <div id="foodTxt3" class="accordion-collapse collapse" data-bs-parent="#foodMenu">
+            <div class="accordion-body">
+              <p>
+                精選體型小、骨骼細的 40 天春雞，將其均勻裹上一層厚厚的楓糖芥末後，再送進烤爐燒烤。<br>
+                爐烤春雞因恰到好處的溫度而能保有鮮嫩口感與湯汁；取出整隻雞後，你可用手輕易撥開骨架幼嫩的春雞，一口咬下細膩的肉質，感受混合著楓糖芥末醬汁的酥脆表皮，享受這多層次卻不膩口的美味，亦是本季每日午時限量的私房美饌。
+              </p>
+              <p class="float-end text-danger">
+                露營客代訂服務 $800/隻<br>
+                （以利備食材，請於一週前預約）
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+  </section>
+
+  <section id="chitrans" class="ratio py-5">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14454.844743631962!2d121.57124934999999!3d25.077776300000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1szh-TW!2stw!4v1689057546188!5m2!1szh-TW!2stw"
+      width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <article class="container py-5">...</article>
+    <article class="container position-static">
+      <div class="row gy-2">
+        <header class="col-12 col-lg-6 text-center">
+          <h2 class="card text-info">交通位置</h2>
+        </header>
+        <div class="col-12"></div>
+        <div class="col-12 col-lg-6">
+          <div class="card">
+            <div class="card-body">
+              <strong>公車、捷運</strong>
+              <ul class="ps-4">
+                <li>公車：三重客運 (637、638)、指南客運 (797、798、801、858、880、883、1501、1503)，至大湖公園站下車。</li>
+                <li>台北市內湖區免費公車：至貴子路下車後，步行至貴子路口左轉明志路 3 段，明志路直行約 100 公尺至工專路右轉，再直行即可至捷運大湖公園站。
+                </li>
+                <li>捷運：臺北捷運文湖線至大湖公園站 1 號出口，再轉乘公車或騎乘 YouBike 微笑單車（約 10~15 分鐘）至湖濱度假飯店。</li>
+              </ul>
+              <strong>自行開車</strong>
+              <ul class="ps-4">
+                <li>走國道一號過林口交流道後靠右側二車道行駛，順勢上汐止五股高架道路(18標)，從堤頂大道交流道下平面道路</li>
+                <li>由南港車站走成美橋，直行高架道路，下到平面道路之後直行至貴子路口右轉，貴子路直行至成功路路左轉，於大湖路繼續前行約 100 公尺右轉工專路，即可抵達湖濱度假飯店。</li>
+                <li>大湖公園「汽車」停車費 30 元/小時，請儘量搭乘大眾交通工具或機車（免停車費）。</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+  </section>
+
+  <section id="chicontact" class="py-5 bg-dark text-light">
+    <header class="container text-center">
+      <h2 class="text-info pb-3">聯絡我們</h2>
+    </header>
+    <article class="container py-5">
+      <form class="row g-4" method="post">
+        <div class="col-12 col-md-6">
+          <label class="form-label" for="dataUser">訪客姓名</label>
+          <div class="input-group">
+            <input class="form-control" type="text" id="dataUser" name="dataUser" placeholder="Full Name" required="">
+            <div class="input-group-text">
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" id="dataSexM" name="dataSex" value="man">
+                <label class="form-check-label" for="dataSexM">男性</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" id="dataSexW" name="dataSex" value="woman">
+                <label class="form-check-label" for="dataSexW">女性</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <label class="form-label" for="dataTel">連絡電話</label>
+          <input class="form-control" type="tel" id="dataTel" name="dataTel" placeholder="Phone Number" required="">
+        </div>
+        <div class="col-12 col-md-6">
+          <label class="form-label" for="dataMail">電子信箱</label>
+          <input class="form-control" type="email" id="dataMail" name="dataMail" placeholder="Email Address"
+            required="">
+        </div>
+        <div class="col-12 col-md-6">
+          <label class="form-label" for="dataQus">問題類型</label>
+          <select class="form-select" id="dataQus" name="DataQus">
+            <option value="住宿相關">住宿相關</option>
+            <option value="婚宴訂桌">婚宴訂桌</option>
+            <option value="其他">其他</option>
+          </select>
+        </div>
+        <div class="col-12">
+          <label class="form-label" for="dataMessage">需求說明</label>
+          <textarea class="form-control" id="dataMessage" name="dataMessage" placeholder="Writer Your Message..."
+            rows="3"></textarea>
+        </div>
+        <div class="col-12 text-center">
+          <button type="submit" class="btn btn-primary">確認送出</button>
+        </div>
+      </form>
+    </article>
+  </section>
+
+  <footer class="bg-dark text-secondary py-3 text-center">
+    <small>
+      copyright &copy; Chunchi All rights reserved.
+    </small>
+    <div id="chiarrow" class="position-fixed">
+      <a href="#chislider" class="btn btn-info text-light"><i class="fas fa-angle-up fa-2x"></i></a>
+    </div>
+  </footer>
+
+
+  <!-- <a href="#" class="btn btn-info position-fixed"><i class="fa-solid fa-chevron-up"></i></a> -->
+  <!-- <script src="plugins/custom.js"></script> -->
+
+</body>
+
+</html>
