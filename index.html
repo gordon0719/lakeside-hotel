@@ -16,10 +16,15 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <script src="./plugins/code.jquery.com_jquery-3.7.0.min.js"></script>
   <script src="./plugins/bootstrap.min.js"></script>
-
+  <meta name="google-site-verification" content="DbmKciIBLpYzgUfPctB9To8KY_XFkcLsuv03bJsAlFM" />   
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#chimenu" data-bs-offset="1">
+  <script>
+    window.onload = function () {
+      writeit();
+    }
+  </script>
   <header id="chimenu" class="bg-dark fixed-top">
     <nav class="navbar navbar-expand-md navbar-light navbar-dark">
       <div class="container">
@@ -424,9 +429,9 @@
     <header class="text-center">
       <h2 class="text-info pb-3">餐飲美食</h2>
     </header>
-    <article class="row py-5 gy-4">
+    <article class="row py-5">
       <!--tab Content-->
-      <div class="tab-content col-lg-6">
+      <div class="tab-content col-12 col-lg-6 mb-5">
         <img id="foodImg1" class="img-thumbnail img-fluid tab-pane fade show active" src="./imgs/food1.jpg">
         <img id="foodImg2" class="img-thumbnail img-fluid tab-pane fade" src="./imgs/food3.jpg">
         <img id="foodImg3" class="img-thumbnail img-fluid tab-pane fade" src="./imgs/food4.jpg">
@@ -493,10 +498,10 @@
   </section>
 
   <section id="chitrans" class="ratio py-5">
-    <iframe
+    <iframe class="embed-responsive-item"
       src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14454.844743631962!2d121.57124934999999!3d25.077776300000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1szh-TW!2stw!4v1689057546188!5m2!1szh-TW!2stw"
       width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"
-      referrerpolicy="no-referrer-when-downgrade"></iframe>
+      referrerpolicy="no-referrer-when-down"></iframe>
     <article class="container py-5">...</article>
     <article class="container position-static">
       <div class="row gy-2">
@@ -529,7 +534,7 @@
   </section>
 
   <section id="chicontact" class="py-5 bg-dark text-light">
-    <header class="container text-center">
+    <header class="text-center">
       <h2 class="text-info pb-3">聯絡我們</h2>
     </header>
     <article class="container py-5">
@@ -579,18 +584,19 @@
     </article>
   </section>
 
+
   <footer class="bg-dark text-secondary py-3 text-center">
     <small>
       copyright &copy; Chunchi All rights reserved.
     </small>
-    <div id="chiarrow" class="position-fixed">
+    <div id="scrollTop" class="position-fixed">
       <a href="#chislider" class="btn btn-info text-light"><i class="fas fa-angle-up fa-2x"></i></a>
     </div>
   </footer>
 
 
   <!-- <a href="#" class="btn btn-info position-fixed"><i class="fa-solid fa-chevron-up"></i></a> -->
-  <!-- <script src="plugins/custom.js"></script> -->
+  <script src="plugins/custom.js"></script>
 
 </body>
 
